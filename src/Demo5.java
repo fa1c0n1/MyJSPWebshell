@@ -1,6 +1,7 @@
 import javax.servlet.*;
 import java.io.IOException;
 
+//自定义Filter示例
 public class Demo5 implements Filter {
 
     @Override

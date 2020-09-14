@@ -13,4 +13,13 @@
 <!--        <url-pattern>/*</url-pattern>-->
 <!--    </filter-mapping>-->
 
+<!--<servlet>-->
+<!--    <servlet-name>Demo6</servlet-name>-->
+<!--    <servlet-class>me.mole.servlet.Demo6</servlet-class>-->
+<!--</servlet>-->
+<!--<servlet-mapping>-->
+<!--    <servlet-name>Demo6</servlet-name>-->
+<!--    <url-pattern>/servletmem/*</url-pattern>-->
+<!--</servlet-mapping>-->
+
 </web-app>
