@@ -13,20 +13,21 @@ public class ListenerDemo2 implements ServletRequestListener {
      *   否则tomcat启动会报错.
      */
     public ListenerDemo2() {
-
+        System.out.println("ListenerDemo2() called...");
     }
 
     public ListenerDemo2(HttpServletResponse response) {
+        System.out.println("ListenerDemo2(HttpServletResponse resp) called...");
         this.response = response;
     }
 
     @Override
     public void requestDestroyed(ServletRequestEvent sret) {
-        System.out.println("ListenerDemo requestDestroyed");
+        System.out.println("ListenerDemo2 requestDestroyed");
     }
 
     @Override
     public void requestInitialized(ServletRequestEvent sret) {
-        System.out.println("ListenerDemo requestInitialized");
+        System.out.println("ListenerDemo2 requestInitialized");
     }
 }

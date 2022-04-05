@@ -8,18 +8,18 @@ public class FilterDemo implements Filter {
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
-        System.out.println("me.mole.filter.Demo5 Filter init...");
+        System.out.println("me.mole.filter.FilterDemo Filter init...");
     }
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain)
             throws IOException, ServletException {
-        System.out.println("me.mole.filter.Demo5 Filter doFilter...");
+        System.out.println("me.mole.filter.FilterDemo Filter doFilter...");
         filterChain.doFilter(servletRequest, servletResponse);
     }
 
     @Override
     public void destroy() {
-        System.out.println("me.mole.filter.Demo5 Filter destroy...");
+        System.out.println("me.mole.filter.FilterDemo Filter destroy...");
     }
 }
