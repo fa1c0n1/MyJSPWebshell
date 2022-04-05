@@ -3,23 +3,26 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
-    
-<!--    <filter>-->
-<!--        <filter-name>Demo5</filter-name>-->
-<!--        <filter-class>Demo5</filter-class>-->
-<!--    </filter>-->
-<!--    <filter-mapping>-->
-<!--        <filter-name>Demo5</filter-name>-->
-<!--        <url-pattern>/*</url-pattern>-->
-<!--    </filter-mapping>-->
 
-<!--<servlet>-->
-<!--    <servlet-name>Demo6</servlet-name>-->
-<!--    <servlet-class>me.mole.servlet.Demo6</servlet-class>-->
-<!--</servlet>-->
-<!--<servlet-mapping>-->
-<!--    <servlet-name>Demo6</servlet-name>-->
-<!--    <url-pattern>/servletmem/*</url-pattern>-->
-<!--</servlet-mapping>-->
+    <filter>
+        <filter-name>filterdemo</filter-name>
+        <filter-class>me.mole.filter.FilterDemo</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>filterdemo</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
 
+    <servlet>
+        <servlet-name>servletdemo</servlet-name>
+        <servlet-class>me.mole.servlet.ServletDemo</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servletdemo</servlet-name>
+        <url-pattern>/servlet/servletdemo</url-pattern>
+    </servlet-mapping>
+
+    <listener>
+        <listener-class>me.mole.listener.ListenerDemo2</listener-class>
+    </listener>
 </web-app>
